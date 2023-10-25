@@ -28,6 +28,8 @@ void shell_sort(int *array, size_t size)
 	int j;
 	size_t i;
 
+	if (array == NULL || size <= 1)
+		return;
 	gap = knuthSequence(size);
 	while (gap > 0)
 	{
